@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+          }
+          
+          header {
+            background-color: #3272e2 ;
+            color: #2E4053;
+            text-align: center;
+            padding: 1em 0;
+          }
+          
+          nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color:black;
+            overflow: hidden;
+          }
+          
+          nav li {
+            float: left;
+          }
+          
+          nav a {
+            display: block;
+            color:blanchedalmond;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          }
+          
+          section {
+            padding: 20px;
+          }
+          
+          .menu {
+            width: 40%;
+            margin: auto;
+          }
+          
+          .menu img {
+            max-width: 50%;
+            height: auto;
+          }
+          
+          .frame-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+            
+          }
+          
+          .frame {
+            width: 30%;
+            border: 1px solid #ccc;
+            padding: 10px;
+          }
+          *
+          {
+              margin: 0;
+              padding:0;
+              box-sizing: border-box;
+              font-family: 'poppins',sans-serif;
+          }
+          a
+          {
+            position:relative;
+            color:#ffff;
+            color:#ffff;
+            text-decoration :none;
+            text-transform:uppercase;
+            font-size: 1.5em;
+            letter-spacing: 0.1em;
+            font-weight: 400;
+            padding:5px 15px;
+            transition:0.5s;
+          }
+          a:hover 
+          {
+            background: var(--clr);
+            color:var(--clr)
+            letter-spacing: 0.25em;
+            box-shadow: 0 0 35px var(--clr);
+          }
+          a:before 
+          {
+            content: '';
+            position:absolute;
+            inset:2px;
+            background:cadetblue;
+          }
+          a span
+          {
+            position:relative;
+            z-index: 1;
+          }
+          a i
+          {
+            position: absolute;
+            inset:0;
+            display:block;
+          }
+          a i::before
+          {
+            content:'';
+            position:absolute;
+            top:0;
+            left:80%;
+            width: 10px;
+            height: 4px;
+            background: #27282c;
+            transform:translateX(-50%) skew(325deg);
+            transition:0.5s;
+          }
+          a:hover i::before
+          {
+            width:20px;
+            left:20px;
+          }
+          
+          a i::after
+          {
+            content:'';
+            position:absolute;
+            bottom:0;
+            left:20%;
+            width: 10px;
+            height: 4px;
+            background: #27282c;
+            transform:translateX(-50%) skew(325deg);
+            transition:0.5s;
+          }
+          
+          a:hover i::after
+          {
+            width:20px;
+            left:80px;
+          }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Taiwan Restaurant</h1>
+    </header>
+
+    <nav>
+        <ul>
+           <li><a href="#menu" style="--clr:#1e9bff"><span>Menu</span><i></i></a></li>
+           <li><a href="#specials" style="--clr:#6eff3e"><span>specials</span><i></i></a></li>
+           <li><a href="#contact" style="--clr:#ff1867"><span>Contact</span><i></i></a></li>
+        </ul>
+    </nav>
+
+    <section id="menu">
+        <h2>Menu</h2>
+        <div class="menu">
+            <img src="Tom yum goong.jpg" alt="Dish 1">
+            <p>Dish 1:Thai soup renowned for its hot and sour flavors with shrimp <b>Rs.1250</b></p>
+            <img src="lasagna.jpeg" alt="Dish 2">
+            <p>Dish 2:  rich and creamy whole-wheat pasta dish .<b>Rs.1500</b></b></p>
+            <!-- Add more dishes as needed -->
+        </div>
+    </section>
+
+    <section id="specials">
+        <h2>Specials</h2>
+        <div class="frame-container">
+            <div class="frame">
+                <h3>Tom Yam Goong</h3>
+                <center><img src="Tom yum goong.jpg" style="width: 200px;">`</center>
+                <p>Tom Yum is one of the best known Thai dishes, a spicy, sour, and aromatic soup that is traditionally served with rice. It consists of shallots, lemongrass, fish sauce, minced fresh ginger or galangal, shrimps, mushrooms, kaffir lime leaves, lime juice, and minced Thai chili peppers.</p>
+            </div>
+            <div class="frame">
+                <h3>Lasagna</h3>
+                <center><img src="lasagna.jpeg"></center>
+                <p>Lasagna is a wide, flat sheet of pasta. Lasagna can refer to either the type of noodle or to the typical lasagna dish which is a dish made with several layers of lasagna sheets with sauce and other ingredients, such as meats and cheese, in between the lasagna noodles.</p>
+            </div>
+            <!-- Add more specials as needed -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>For reservations, please call us at: 123-456-7890</p>
+        <p>Visit us at: 123 Main Street, Cityville</p>
+    </section>
+
+    <footer>
+        <p>&copy;<b>Created by Your Friends Restaurant</b> </p>
+    </footer>
+
+</body>
+</html>
